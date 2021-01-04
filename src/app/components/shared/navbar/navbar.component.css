@@ -32,16 +32,21 @@
 }
 
 .navbar.navbar-expand-lg.navbar-dark.blue.lighten-2.mb-4 > ul > button{
-    width: 90px;
-    height: 37px;
-    border-radius: 8px;
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 17%;
+    height: 5%;
 }
 
-.navbar.navbar-expand-lg.navbar-dark.blue.lighten-2.mb-4 > ul > button:hover{
+.navbar-brand{
+    padding-top: 2%;
+    font-weight: 200;
+}
+
+.btn.btn-outline-dark.my-2.my-sm-0:hover{
     background: #2FAAC5;
-    
 }
 
 a{
-    font-weight: 200;
+    
 }

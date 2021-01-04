@@ -1,1 +1,29 @@
-<p>register works!</p>
+<div class="container">
+    <div class="card">
+        <h2>Registro</h2>
+        <div class="card-body">
+            <form>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user icon"></i></span>
+                    <input id="nombreUsuario" type="text" class="form-control" name="nombreUsuario" placeholder="Nickname" #nickname>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input id="email" type="email" class="form-control" name="email" placeholder="Email" #email>
+                  </div> 
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" #contrasena>
+                  </div> 
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" placeholder="Repetir Contraseña" #contrasena>
+                  </div> 
+                  <button type="button" class="btn btn-block btn-success">Registro</button>
+               </form>
+               <div class="alreadyLogged">
+                <a routerLink="/login">¿ Ya estas registrado ?</a>
+            </div>
+        </div>
+      </div>
+</div>

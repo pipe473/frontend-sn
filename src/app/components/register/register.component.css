@@ -1,0 +1,102 @@
+/* MEDIA QUERIES */
+
+/*Escritorio*/
+@media (min-width: 1199.98px) {
+
+    h2 {
+        text-align: center;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .container{
+        padding-top: 10%;
+    }
+
+    .card{
+        margin-left: 26%;
+        margin-right: 26%;
+        border-radius: 35px;
+        height: 180%;
+    }
+
+    .card-body{
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    #nombreUsuario{
+        padding: 5%;
+    }
+
+    #password{
+        padding: 5%;
+    }
+
+    #email{
+        padding: 5%;
+    }
+
+    .input-group-addon{
+        padding-right: 7%;
+        padding-top: 2%;
+    }
+    .input-group{
+        padding-bottom: 10%;
+    }
+
+    .btn.btn-block.btn-success{
+        border-radius: 28px;
+        padding: 2%;
+        margin-bottom: 9%;
+        background: #5DB075;
+    }
+
+    .btn.btn-block.btn-success:hover{
+        background: #2FAAC5;
+        border-color: #2FAAC5;
+    }
+
+    .alreadyLogged{
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 16%;
+        font-size: 15px;
+        
+    }
+
+    a{
+        color: rgb(184, 174, 174);
+        text-decoration: none;
+        font-weight: 200;
+    }
+
+    a:hover{
+        color: #2FAAC5;
+    }
+
+    .placeholder{
+        font-weight: 200;
+    }
+
+    .fa.fa-lock{
+        font-size: 18px;
+        color: #808c96;
+    }
+
+    .fa.fa-unlock{
+        font-size: 18px;
+        color: #808c96;
+    }
+
+    .fa.fa-envelope{
+        color: #808c96;
+    }
+
+    .fa.fa-user.icon{
+        color: #808c96;
+    }
+
+}

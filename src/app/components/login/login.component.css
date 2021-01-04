@@ -77,11 +77,12 @@
         font-weight: 200;
     }
 
-    .glyphicon.glyphicon-lock{
+    .fa.fa-lock{
+        font-size: 18px;
         color: #808c96;
     }
 
-    .glyphicon.glyphicon-user{
+    .fa.fa-envelope{
         color: #808c96;
     }
 
