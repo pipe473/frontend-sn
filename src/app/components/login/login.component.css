@@ -2,66 +2,87 @@
 
 /*Escritorio*/
 @media (min-width: 1199.98px) {
-    body > div{
-        margin-left: 32%;
-        margin-right: 32%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-    
-    body > div > div{
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-bottom: 20%;
-        padding-top: 10%;
-    }
-    
-    body > div > div > h3{
+
+    h2 {
         text-align: center;
-        padding-bottom: 6%;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        text-transform: uppercase;
+        font-weight: 200;
     }
-    body > div > div > form > div:nth-child(1) > span{
-        background: #080808ce;
-        color: white;
+
+    .container{
+        padding-top: 15%;
     }
-    body > div > div > form > div:nth-child(2) > span{
-        background: #080808ce;
-        color: white;
+
+    .card{
+        margin-left: 26%;
+        margin-right: 26%;
+        border-radius: 35px;
+        height: 180%;
     }
-    body > div > div > form > button{
-        border: #080808ce;
-        background: #080808ce;    
+
+    .card-body{
+        margin-right: 15%;
+        margin-left: 15%;
     }
-    
-    body > div > div > form > button:hover{
-        background: #F0605C;
+
+    #nombreUsuario{
+        padding: 5%;
     }
-    
-    body > div > div > form > button{
-        width: 100%;
-        margin-top: 7%;
+
+    #password{
+        padding: 5%;
     }
-    
-    body > div > div > form > div:nth-child(1){
-        margin-bottom: 3%;
+
+    .input-group-addon{
+        padding-right: 7%;
+        padding-top: 2%;
     }
-    body > div > div > form > div:nth-child(2){
-        margin-bottom: 3%;
+    .input-group{
+        padding-bottom: 10%;
     }
-    
+
+    .btn.btn-block.btn-success{
+        border-radius: 28px;
+        padding: 2%;
+        margin-bottom: 9%;
+        background: #5DB075;
+    }
+
+    .btn.btn-block.btn-success:hover{
+        background: #2FAAC5;
+        border-color: #2FAAC5;
+    }
+
     .alreadyLogged{
-        display: flex;
-        justify-content: center;
-        padding-top: 20%;
-        font-size: 125%;    
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 20%;
+        font-size: 15px;
+        
     }
-    
-    body > div > div > div > a{
+
+    a{
+        color: rgb(184, 174, 174);
         text-decoration: none;
-        color: #F0605C;
+        font-weight: 200;
     }
-    
-    body > div > div > div > a:hover{
-        color: #080808ce;
+
+    a:hover{
+        color: #2FAAC5;
     }
+
+    .placeholder{
+        font-weight: 200;
+    }
+
+    .glyphicon.glyphicon-lock{
+        color: #808c96;
+    }
+
+    .glyphicon.glyphicon-user{
+        color: #808c96;
+    }
+
 }
