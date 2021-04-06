@@ -99,4 +99,16 @@
         color: #808c96;
     }
 
+    .checkbox-group{
+        display: flex;
+        flex-direction: row;
+        margin: -12px 2px 15px 3px;
+    }
+    .check-label{
+        margin-left: 12px;
+        margin-top: 1px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+
 }
