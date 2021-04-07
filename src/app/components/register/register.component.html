@@ -21,8 +21,12 @@
                            class="form-control" 
                            name="email" 
                            placeholder="Email"
-                           formControlName="email">
+                           formControlName="email"
+                           [class.is-invalid]="invalidEmail">
                   </div> 
+                  <small *ngIf="invalidEmail" class="text-danger row">
+                    Por favor escribe un email válido
+                  </small>
                   <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                     <input type="password" 
@@ -51,7 +55,7 @@
                     <input id="checkbox" type="checkbox" class="checkbox-control" name="checkbox" #recordar_usuario>
                     <label class="check-label">recordar mi usuario</label>
                   </div>  -->
-                  <button type="submit" class="btn btn-block btn-success row">Registro</button>
+                  <button type="submit" class="btn btn-block btn-success">Registro</button>
                </form>
                <div class="alreadyLogged">
                 <a routerLink="/login">¿ Ya estas registrado ?</a>
