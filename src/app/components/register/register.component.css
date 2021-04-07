@@ -44,7 +44,15 @@
         padding-top: 2%;
     }
     .input-group{
-        padding-bottom: 10%;
+        margin: 20px 0 4px 0;
+    }
+
+    .form-control{
+        min-height: 28px;
+    }
+
+    .text-danger{
+        margin: 0 0 0 42px;
     }
 
     .btn.btn-block.btn-success{

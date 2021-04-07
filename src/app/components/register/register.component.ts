@@ -23,6 +23,10 @@ export class RegisterComponent implements OnInit {
     // this.user.email = "pipe473@gmail.com"
   }
 
+  get invalidNickname(){
+    return this.form.get('nickname').invalid && this.form.get('nickname').touched
+  }
+
   RegisterForm(){
     this.form = this.fb.group({
       nickname:['', [Validators.required, Validators.minLength(4)]],

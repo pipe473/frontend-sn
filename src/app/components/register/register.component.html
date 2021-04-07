@@ -1,17 +1,21 @@
 <div class="container">
     <div class="card">
         <h2>Registro</h2>
-        <div class="card-body">
+        <div class="card-body col-9">
             <form autocomplete="off" [formGroup]="form" (ngSubmit)="save()">
-                <div class="input-group">
+                <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-user icon"></i></span>
                     <input type="text" 
                            class="form-control" 
                            name="nombreUsuario" 
                            placeholder="Nickname"
-                           formControlName="nickname">
-                  </div>
-                  <div class="input-group">
+                           formControlName="nickname"
+                           [class.is-invalid]="invalidNickname">
+                          </div>
+                             <small *ngIf="invalidNickname" class="text-danger row">
+                               Debe tener almenos 4 caracteres
+                             </small>
+                  <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
                     <input type="email" 
                            class="form-control" 
@@ -19,7 +23,7 @@
                            placeholder="Email"
                            formControlName="email">
                   </div> 
-                  <div class="input-group">
+                  <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                     <input type="password" 
                            class="form-control" 
@@ -27,7 +31,7 @@
                            placeholder="Contraseña"
                            formControlName="contrasena">
                   </div> 
-                   <div class="input-group">
+                   <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-code"></i></span>
                     <input type="tags" 
                            class="form-control" 
@@ -47,7 +51,7 @@
                     <input id="checkbox" type="checkbox" class="checkbox-control" name="checkbox" #recordar_usuario>
                     <label class="check-label">recordar mi usuario</label>
                   </div>  -->
-                  <button type="submit" class="btn btn-block btn-success">Registro</button>
+                  <button type="submit" class="btn btn-block btn-success row">Registro</button>
                </form>
                <div class="alreadyLogged">
                 <a routerLink="/login">¿ Ya estas registrado ?</a>
