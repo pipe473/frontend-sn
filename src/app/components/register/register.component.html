@@ -2,28 +2,52 @@
     <div class="card">
         <h2>Registro</h2>
         <div class="card-body">
-            <form>
+            <form autocomplete="off" [formGroup]="form" (ngSubmit)="save()">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user icon"></i></span>
-                    <input id="nombreUsuario" type="text" class="form-control" name="nombreUsuario" placeholder="Nickname" #nickname>
+                    <input type="text" 
+                           class="form-control" 
+                           name="nombreUsuario" 
+                           placeholder="Nickname"
+                           formControlName="nickname">
                   </div>
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                    <input id="email" type="email" class="form-control" name="email" placeholder="Email" #email>
+                    <input type="email" 
+                           class="form-control" 
+                           name="email" 
+                           placeholder="Email"
+                           formControlName="email">
                   </div> 
                   <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña" #contrasena>
+                    <input type="password" 
+                           class="form-control" 
+                           name="password" 
+                           placeholder="Contraseña"
+                           formControlName="contrasena">
                   </div> 
-                  <div class="input-group">
+                   <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-code"></i></span>
+                    <input type="tags" 
+                           class="form-control" 
+                           name="tags" 
+                           placeholder="Escribe tus lenguajes e programación favoritos"
+                           formControlName="tags">
+                  </div> 
+                  <!-- <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" placeholder="Repetir Contraseña" #contrasena>
-                  </div> 
-                  <div class="checkbox-group">
+                    <input type="repassword" 
+                           class="form-control" 
+                           name="password" 
+                           placeholder="Repetir Contraseña"
+                           formControlName="">
+                  </div>  -->
+                  <!-- <div class="checkbox-group">
                     <input id="checkbox" type="checkbox" class="checkbox-control" name="checkbox" #recordar_usuario>
                     <label class="check-label">recordar mi usuario</label>
-                  </div> 
-                  <button type="button" class="btn btn-block btn-success">Registro</button>
+                  </div>  -->
+                  <button type="submit" class="btn btn-block btn-success">Registro</button>
                </form>
                <div class="alreadyLogged">
                 <a routerLink="/login">¿ Ya estas registrado ?</a>
@@ -31,3 +55,13 @@
         </div>
       </div>
 </div>
+
+<hr>
+<pre>
+  Estado del formulario {{form.valid}}
+  <br>
+  status: {{form.status}}
+</pre>
+<pre>
+  {{ form.value | json}}
+</pre>

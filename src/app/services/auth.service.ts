@@ -27,7 +27,12 @@ export class AuthService {
   }
 
   register(usuario: UserModel){
-
+    const userAuthData = {
+      ...usuario
+    };
+    return this.http.post(
+      `${this.url}/register`, userAuthData
+    );
   }
 
 }
