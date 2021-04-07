@@ -13,7 +13,7 @@
                            [class.is-invalid]="invalidNickname">
                           </div>
                              <small *ngIf="invalidNickname" class="text-danger row">
-                               Debe tener almenos 4 caracteres
+                               El nombre de usuario debe tener almenos 4 caracteres
                              </small>
                   <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -33,16 +33,24 @@
                            class="form-control" 
                            name="password" 
                            placeholder="Contraseña"
-                           formControlName="contrasena">
+                           formControlName="contrasena"
+                           [class.is-invalid]="invalidPassword">
                   </div> 
+                  <small *ngIf="invalidPassword" class="text-danger row">
+                    La contraseña debe tener una longitud mínima de 5 caracteres
+                  </small>
                    <div class="input-group row">
                     <span class="input-group-addon"><i class="fa fa-code"></i></span>
                     <input type="tags" 
                            class="form-control" 
                            name="tags" 
-                           placeholder="Escribe tus lenguajes e programación favoritos"
-                           formControlName="tags">
+                           placeholder="Escribe tus lenguajes de programación favoritos"
+                           formControlName="tags"
+                           [class.is-invalid]="invalidTag">
                   </div> 
+                  <small *ngIf="invalidTag" class="text-danger row">
+                    Escribe almenos un leguaje de programación
+                  </small>
                   <!-- <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-unlock"></i></span>
                     <input type="repassword" 
